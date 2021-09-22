@@ -1,0 +1,17 @@
+/* Create two columns/boxes that floats next to each other */
+aside {
+    float: left;
+    width: 30%;
+}
+  
+section {
+    float: left;
+    width: 70%;
+}
+  
+/* Style the footer */
+footer {
+    text-align: center;
+    float: left;
+    margin-left: 30%;
+}
