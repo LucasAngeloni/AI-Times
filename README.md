@@ -1,0 +1,1 @@
+https://artificialintelligence-news.com/2021/09/08/ai-big-data-expo-2021-ethics-myths-and-making-sense-of-data/
