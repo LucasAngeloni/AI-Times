@@ -4,7 +4,12 @@ body{
     font-size: 18px;
     color: #050505;
 }
-
+.clr{
+    clear: both;
+}
+ol li{
+    margin-bottom: 16px;
+}
 .nav-sn{
     position: relative;
     border-bottom: 1px gray solid;
@@ -43,13 +48,14 @@ nav ul,nav li{
     border-bottom: 1px gray solid;
     background-color: rgb(229, 226, 226);
 }
-#main-header p:nth-child(1){
+
+.mit-title p:nth-child(1){
     font-size: 52px;
     font-weight: bold;
     padding: 0;
     margin:0
 }
-#main-header p:nth-child(2){
+.mit-title p:nth-child(2){
     font-size: 12px;
     font-weight: bold;
     padding: 0;
@@ -64,6 +70,21 @@ nav ul,nav li{
 #main-header ul li{
     display: inline;
     text-decoration: none;
+}
+.icono-correo{
+    width:20px;
+    height: 20px;
+    margin:0;
+}
+
+.other-link{
+    text-decoration: none;
+    padding: 16px;
+    color: #050505;
+    margin: 8px;
+    border-right: lightgray 1px solid;
+    border-left: lightgray 1px solid;
+    border-top: lightgray 2px solid;
 }
 /* Create two columns/boxes that floats next to each other */
 section {
@@ -111,10 +132,102 @@ aside {
     float: left;
     width: 30%;
 }
-  
-/* Style the footer */
-footer {
-    text-align: center;
+
+.related-article{
+    padding: 8px;
+    border: 1px black solid;
+    width: 200px;
+}
+.related-article img{
+    width: 200px;
+}
+.related-article a{
+    text-decoration: none;
+    color: #050505;
+    width: auto;
+}
+.related-article figcaption{
+    font-size: medium;
+    font-weight: 800;
+    max-width: 200px;
+}
+
+.more-info{
     float: left;
-    margin-left: 30%;
+    width: 60%;
+}
+.subscribes-btn{
+    float: right;
+    width: 40%;
+}
+.link{
+    text-decoration: underline red;
+    color: #050505;
+}
+.link:hover{
+    background-color: red;
+}
+#last-section{
+    width: 100%;
+    background-color: rgb(229, 226, 226);
+    border-top: #050505 1px solid;
+    border-bottom: #050505 1px solid;
+}
+.more-links{
+    float: left;
+    width: 33.3%;
+}
+.btn{
+    display: block;
+    text-decoration: none;
+    color: #050505;
+    border: #050505 2px solid;
+    padding: 16px;
+    text-align: center;
+    margin: 16px;
+    width: 70%;
+    font-weight: 700;
+}
+.btn:hover{
+    background-color: red;
+}
+aside p:nth-child(1){
+    padding-top: 350px;
+    padding-bottom: 450px;
+    line-height: 1.65em;
+    font-size: 0.9em;
+}
+aside .paper{
+    padding: 32px;
+    line-height: 1.65em;
+    font-size: 0.9em;
+    background-color: lightgray;
+}
+.icono{
+    width: 40px;
+    height: 40px;
+}
+/* Style the footer */
+footer{
+    margin-left: 64px;
+    background-color: rgb(229, 226, 226);
+}
+.footer-news-info{
+    float: left;
+    padding-right: 32px;
+}
+.footer-news-info p{
+    margin-left: 32px;
+    font-size: small;
+}
+.footer-info{
+    float: left;
+    border-left: gray 1px solid;
+    margin-right: 16px;
+}
+.footer-info p{
+    margin-left: 16px;
+}
+.copyright{
+    text-align: center;
 }
