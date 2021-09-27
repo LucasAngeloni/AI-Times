@@ -1,83 +1,227 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <title>
+            Deep learning helps predict new drug combinations to fight Covid-19
+        </title>
+        <link rel="stylesheet" href="css/styles.css">
     </head>
 
     <body>
-        <nav>
+        <nav class="nav-sn">
+            <img id="logo" src="imgs/logo.png" alt="logo">
+            <h1>AI Times</h1>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li class="nav-link">
+                    <a href="#">Education</a> 
+                </li>
+                <li class="nav-link">
+                    <a href="#">Research</a>
+                </li>
+                <li class="nav-link">
+                    <a href="#">Innovation</a>
+                </li>
+                <li class="nav-link">
+                    <a href="#">Admissions + Aid</a>
+                </li>
+                <li class="nav-link">
+                    <a href="#">Campus Life</a>
+                </li>
+                <li class="nav-link">
+                    <a href="#">News</a>
+                </li>
+                <li class="nav-link">
+                    <a href="#">About MIT</a>
+                </li>
             </ul>
         </nav>
         <header>
-            <h1>
-
-            </h1>
+            <div id="main-header">
+                <span>
+                    <p>MIT News</p>
+                    <p>ON CAMPUS AND AROUND THE WORLD</p>
+                </span>
+                <ul>
+                    <li><a href="#" class="subscribe">SUBSCRIBE</a></li>
+                    <li><a href="#" class="btn">BROWSE</a></li>
+                    <li><a href="#">SEARCH NEWS</a></li>
+                </ul>
+            </div>
         </header>
         <section>
             <article>
                 <h2>
-
+                    Deep learning helps predict new drug combinations to fight Covid-19
                 </h2>
-                <p>
-
+                <p class="resume">
+                    Neural network identifies synergistic drug blends for treating viruses like SARS-CoV-2.
                 </p>
+                <p class="author">Rachel Gordon | MIT CSAIL</p>
+                <p class="date">September 24, 2021</p>
                 <figure>
-                    <img>
+                    <img src="imgs/covid.jpg">
                 </figure>
-                <p>
-
-                </p>
+                <div class="article-text">
+                    <p>
+                        The existential threat of Covid-19 has highlighted an acute need to develop working
+                        therapeutics against emerging health concerns. One of the luxuries deep learning has afforded 
+                        us is the ability to modify the landscape as it unfolds — so long as we can keep up with the viral 
+                        threat, and access the right data. 
+                    </p>
+                    <p>
+                        As with all new medical maladies, oftentimes the data need time to catch up, and the virus 
+                        takes no time to slow down, posing a difficult challenge as it can quickly mutate and become 
+                        resistant to existing drugs. This led scientists from MIT’s Computer Science and 
+                        Artificial Intelligence Laboratory (CSAIL) and the Jameel Clinic for Machine Learning in Health to ask: 
+                        How can we identify the right synergistic drug combinations for the rapidly spreading SARS-CoV-2?  
+                    </p>
+                    <p>
+                        Typically, data scientists use deep learning to pick out drug combinations with large existing datasets 
+                        for things like cancer and cardiovascular disease, but, understandably, they can’t be used for 
+                        new illnesses with limited data.
+                    </p>
+                    <p>
+                        Without the necessary facts and figures, the team needed a new approach: a neural network that 
+                        wears two hats. Since drug synergy often occurs through inhibition of biological targets (like proteins 
+                        or nucleic acids), the model jointly learns drug-target interaction and drug-drug synergy to mine 
+                        new combinations. The drug-target predictor models the interaction between a drug and a set of known 
+                        biological targets that are related to the chosen disease. The target-disease association predictor 
+                        learns to understand a drug's antiviral activity, which means determining the virus yield in infected 
+                        tissue cultures. Together, they can predict the synergy of two drugs. 
+                    </p>
+                    <p>
+                        Two new drug combinations were found using this approach: remdesivir (currently approved by the 
+                        FDA to treat Covid-19) and reserpine, as well as remdesivir and IQ-1S, which, in biological assays, 
+                        proved powerful against the virus. The study has been <span id="published">published</span> in the <em>Proceedings of the National Academy of Sciences</em>.
+                    </p>
+                    <p>
+                        “By modeling interactions between drugs and biological targets, we can significantly decrease the dependence 
+                        on combination synergy data,” says Wengong Jin SM '18, a postdoc at the Broad Institute of MIT and Harvard 
+                        who recently completed his doctoral work in CSAIL, and who is the lead author on a new paper about the research. 
+                        “In contrast to previous approaches using drug-target interaction as fixed descriptors, our method learns to predict 
+                        drug-target interaction from molecular structures. This is advantageous since a large proportion of compounds have 
+                        incomplete drug-target interaction information.” 
+                    </p>
+                    <p>
+                        Using multiple medications to maximize potency, while also decreasing side effects, is practically ubiquitous 
+                        for aforementioned cancer and cardiovascular disease, including a host of others such as tuberculosis, leprosy, 
+                        and malaria. Using specialized drug cocktails can, quite importantly, reduce the grave and sometimes public threat 
+                        of resistance (think methicillin-resistant Staphylococcus aureus known as “MRSA”), since many drug-resistant 
+                        mutations are mutually exclusive. It’s much harder for a virus to develop two mutations at the same time and then 
+                        become resistant to two drugs in a combination therapy. 
+                    </p>
+                    <p>
+                        Importantly, the model isn’t limited to just one SARS-CoV-2 strain — it could also potentially be used for the 
+                        increasingly contagious Delta variant or other variants of concern that may arise. To extend the model's efficacy 
+                        against these strains, you’d only need additional drug combination synergy data for the relevant mutation(s). 
+                        In addition, the team applied their approach to HIV and pancreatic cancer.
+                    </p>
+                </div>
             </article>
         </section>
         <aside>
             <p>
-
+                Caption:Since drug synergy often occurs through inhibition of biological targets (like proteins or nucleic acids), 
+                a new artificial intelligence model developed at MIT jointly learns drug-target interaction and drug-drug synergy 
+                to mine new combinations.
             </p>
             <p>
-
+                SHARE
             </p>
-            <textarea>
-
-            </textarea>
             <p>
-
+                Paper: "Deep learning identifies synergistic drug combinations for treating COVID-19"
             </p>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+            <h3>
+                RELATED LINKS
+            </h3>
+            <ol>
+                <li>Wengong Jin</li>
+                <li>Regina Barzilay</li>
+                <li>Tommi Jaakkola</li>
+                <li>James Collins</li>
+                <li>Computer Science and Artificial Intelligence Laboratory (CSAIL)</li>
+                <li>Abdul Latif Jameel Clinic for Machine Learning in Health</li>
+                <li>Broad Institute of MIT and Harvard</li>
+                <li>Department of Electrical Engineering and Computer Science</li>
+            </ol>
         </aside>
-        <p>Other Articles</p>
-            <figure>
-                <img>
-            </figure>
         <section>
-            <h2>
+            <h3>RELATED ARTICLES</h3>
+            <a href="index.html">
+                <div>
+                    <figure>
+                        <img src="imgs/notice.jpg">
+                        <figcaption>
+    
+                        </figcaption>
+                    </figure>
+                </div>
+            </a>
 
-            </h2>
-            <div>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-                <p></p>
-                <p></p>
-                <p></p>
+        </section>
+        <section>
+            <div class="more-info">
+                <header>
+                    <div>
+                        <h2>MIT NEWS</h2>
+                        <h3>ON CAMPUS AND AROUND THE WORLD</h3>
+                    </div>
+                </header>
+                <p>
+                    This website is managed by the MIT News Office, part of the <a id="MIT-office" href="https://comms.mit.edu/">MIT Office of Communications</a>.
+                </p>
+                <div>
+                    <ol>
+                        <li>School of Architecture and Planning</li>
+                        <li>School of Engineering</li> 
+                        <li>School of Humanities, Arts, and Social Sciences</li>
+                        <li>MIT Sloan School of Management</li>
+                        <li>School of Science</li>
+                        <li>MIT Schwarzman College of Computing</li>
+                    </ol>
+                    <div>
+                        <p>About the MIT News Office</p>
+                        <p>Press Inquiries</p>
+                    </div>
+                    <div>
+                        <p>MIT News Press Center</p>
+                        <p>Filming Guidelines</p>
+                    </div>
+                    <div>
+                        <p>Terms of Use</p>
+                        <p>RSS Feeds</p>
+                    </div>
+                </div>
             </div>
+            <div class="subscribes-btn">
+                <a class="btn">Subscribe to MIT Daily/Weekly</a>
+                <a class="btn">Subscribe to press releases</a>
+                <a class="btn">Submit campus news</a>
+            </div>
+            
         </section>
         <footer>
-
+            <div>
+                <h4>AI Times</h4>
+                <p>77 Massachusetts Avenue, Cambridge, MA, USA</p>
+            </div>
+            <div>
+                Education
+                Admissions + Aid
+                Alumni
+            </div>
+            <div>
+                Research
+                Campus Life
+                About MIT
+            </div>
+            <div>
+                Innovation
+                News
+            </div>
+            <p>
+                Copyright &#169; 2021 AI News. All Rights Reserved.
+            </p>
         </footer>
     </body>
 </html>

@@ -1,12 +1,115 @@
+body{
+    margin: 0;
+    font-family: MessinaSans,sans-serif;
+    font-size: 18px;
+    color: #050505;
+}
+
+.nav-sn{
+    position: relative;
+    border-bottom: 1px gray solid;
+    text-align: center;
+}
+
+#logo{
+    width: 60px;
+    float: left;
+}
+h1{
+    display: inline;
+    float: left;
+}
+nav ul,nav li{
+    display: inline-block;
+}
+.nav-link{
+    padding: 10px;
+    float: left;
+    list-style: none;
+}
+.nav-link a{
+    text-decoration: none;
+    color:#050505;
+    font-size: 16px;
+    font-weight: 400;
+}
+.nav-link a:hover{
+    text-decoration: underline red;
+}
+#main-header{
+    padding-top: 32px;
+    padding-left: 32px;
+    padding-bottom: 16px;
+    border-bottom: 1px gray solid;
+    background-color: rgb(229, 226, 226);
+}
+#main-header p:nth-child(1){
+    font-size: 52px;
+    font-weight: bold;
+    padding: 0;
+    margin:0
+}
+#main-header p:nth-child(2){
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0;
+    margin:0;
+    display: inline;
+}
+#main-header ul{
+    margin-left: 30%;
+    box-sizing: border-box;
+    display: inline;
+}
+#main-header ul li{
+    display: inline;
+    text-decoration: none;
+}
 /* Create two columns/boxes that floats next to each other */
+section {
+    float: left;
+    width: 65%;
+    margin-left: 64px;
+    padding-left: 32px;
+    padding-top: 64px;
+    box-sizing: border-box;
+    border-left: #050505 1px solid;
+}
+article h2{
+    font-size: 36px;
+    padding-right: 35%;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+article .resume{
+    font-size: 24px;
+    padding-right: 30%;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+article .author, article .date{
+    font-weight: 700;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+article figure{
+    margin: 0;
+    margin-top: 32px;
+}
+.article-text p{
+    line-height: 1.65em;
+}
+
+#published{
+    text-decoration: underline red;
+}
+#published:hover{
+    background-color: red;
+}
+
 aside {
     float: left;
     width: 30%;
-}
-  
-section {
-    float: left;
-    width: 70%;
 }
   
 /* Style the footer */
