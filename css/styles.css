@@ -7,6 +7,23 @@ body{
 .clr{
     clear: both;
 }
+form .text{
+    display: block;
+    width: 80%;
+    margin-bottom: 1em;
+    background-color: lightgray;
+    border: #050505 0 0 0 1px solid;
+}
+form textarea{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 80%;
+    height: 5em;
+}
+form{
+    line-height: 1.65em;
+    font-size: 0.9em;
+}
 ol li{
     margin-bottom: 16px;
 }
@@ -84,7 +101,10 @@ nav ul,nav li{
     margin: 8px;
     border-right: lightgray 1px solid;
     border-left: lightgray 1px solid;
-    border-top: lightgray 2px solid;
+    border-top: lightgray 3px solid;
+}
+.other-link:hover{
+    border-top: red 3px solid;
 }
 /* Create two columns/boxes that floats next to each other */
 section {
@@ -102,6 +122,7 @@ article h2{
     margin-top: 4px;
     margin-bottom: 4px;
 }
+
 article .resume{
     font-size: 24px;
     padding-right: 30%;
@@ -117,6 +138,9 @@ article figure{
     margin: 0;
     margin-top: 32px;
 }
+.article-text{
+    margin-top: 2em;
+}
 .article-text p{
     line-height: 1.65em;
 }
@@ -129,7 +153,7 @@ article figure{
 }
 
 aside {
-    float: left;
+    float: right;
     width: 30%;
 }
 
@@ -225,7 +249,7 @@ footer{
     border-left: gray 1px solid;
     margin-right: 16px;
 }
-.footer-info p{
+.footer-info p,h4{
     margin-left: 16px;
 }
 .copyright{
